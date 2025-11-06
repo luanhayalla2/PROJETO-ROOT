@@ -4,7 +4,7 @@ const AlunoSchema = new mongoose.Schema({
     nome: {
         type: String,
         required: true,
-    },  
+    },
     idade: {
         type: Number,
         required: true,
@@ -12,15 +12,21 @@ const AlunoSchema = new mongoose.Schema({
     turma: {
         type: String,
         required: true,
-    },    
-    frequencia:[ 
+    },
+    nota: {
+        type: Number,
+        default: 0,
+        min: 0,
+        max: 10,
+    },
+    frequencia:[
         {
             data: {
                 type: Date,
                 required: true,
             },
             presente: {
-                type: Boolean,  
+                type: Boolean,
                 required: true,
             },
         }
@@ -28,7 +34,7 @@ const AlunoSchema = new mongoose.Schema({
     criadoEm: {
         type: Date,
         default: Date.now,
-    },  
+    },
 });
 
 module.exports = mongoose.model('Aluno', AlunoSchema);

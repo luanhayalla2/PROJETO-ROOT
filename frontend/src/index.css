@@ -1,0 +1,135 @@
+:root {
+  --background-color: #f5f5f5;
+  --text-color: #333;
+  --primary-color: #007bff;
+  --primary-hover-color: #0056b3;
+  --container-bg-color: white;
+  --container-border-color: #ddd;
+  --form-bg-color: #fafafa;
+  --table-header-bg-color: #f8f9fa;
+  --table-row-hover-bg-color: #f5f5f5;
+  --success-bg-color: #d4edda;
+  --success-text-color: #155724;
+  --success-border-color: #c3e6cb;
+  --error-bg-color: #f8d7da;
+  --error-text-color: #721c24;
+  --error-border-color: #f5c6cb;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme='dark'] {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --primary-color: #bb86fc;
+  --primary-hover-color: #a063f7;
+  --container-bg-color: #1e1e1e;
+  --container-border-color: #444;
+  --form-bg-color: #2a2a2a;
+  --table-header-bg-color: #333;
+  --table-row-hover-bg-color: #383838;
+  --success-bg-color: #2a4b37;
+  --success-text-color: #a7d7b4;
+  --success-border-color: #3e8e41;
+  --error-bg-color: #5c2b2f;
+  --error-text-color: #f7b7b7;
+  --error-border-color: #a83232;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+button:hover {
+  background-color: #0056b3;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+input, select, textarea {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #007bff;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  button {
+    padding: 0.5em 1em;
+  }
+}

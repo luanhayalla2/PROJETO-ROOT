@@ -1,0 +1,6 @@
+@echo off
+echo Starting backend server...
+start "Backend" cmd /k "cd c:\Users\aluno\Desktop\PROJETO-ROOT\backend && npm run dev"
+
+echo Starting frontend server...
+start "Frontend" cmd /k "cd c:\Users\aluno\Desktop\PROJETO-ROOT\frontend && npm run dev"

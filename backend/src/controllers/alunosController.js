@@ -27,8 +27,8 @@ exports.getAlunoById = async (req, res) => {
 // POST /api/alunos
 exports.createAluno = async (req, res) => {
     try {
-        const { nome, idade, turma } = req.body;
-        const novoAluno = new Aluno({ nome, idade, turma });
+        const { nome, idade, turma, nota } = req.body;
+        const novoAluno = new Aluno({ nome, idade, turma, nota });
         const alunoSalvo = await novoAluno.save();
         res.status(201).json(alunoSalvo);
     }catch (error) {
