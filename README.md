@@ -36,7 +36,32 @@ Este é um projeto full-stack para gerenciar alunos, composto por uma API backen
 Para iniciar o servidor backend, execute o seguinte comando no diretório `backend`:
 
 ```
+fale em potugues add um modo notunor e um butão e inicer o app iniciar os servidores de backend e frontend inicer o app
+
+
+### Frontend
+1. Navegue até o diretório `frontend`: `cd frontend`
+2. Instale as dependências: `npm install`
+
+## Uso
+
+### Backend
+Para iniciar o servidor backend, execute o seguinte comando no diretório `backend`:
+
+```
 npm run dev
+```
+
+O servidor estará rodando em `http://localhost:5000`.
+
+### Frontend
+Para iniciar o frontend, execute o seguinte comando no diretório `frontend`:
+
+```
+npm run dev
+```
+
+O frontend estará rodando em `http://localhost:5173`.
 ```
 
 O servidor estará rodando em `http://localhost:5000`.
